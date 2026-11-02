@@ -56,7 +56,6 @@ export default async function DoctorsPage({ searchParams }: DoctorsPageProps) {
   const specializations = Array.from(
     new Set(doctors?.map((d) => d.specialization).filter(Boolean)),
   );
-  console.log(doctors);
   return (
     <>
       <Header
